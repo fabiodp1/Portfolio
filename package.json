@@ -1,35 +1,25 @@
 {
   "name": "portfolio",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
-  "author": "Fabio Di Pane <dipane.fabio@gmail.com>",
-  "license": "MIT",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "^4.4.0",
+    "@vue/cli-plugin-typescript": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
-  ],
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^7.0.2",
-    "css-loader": "^4.0.0",
-    "file-loader": "^6.0.0",
-    "ts-loader": "^8.0.1",
-    "typescript": "^3.9.7",
-    "vue-loader": "^15.9.3",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.44.0",
-    "webpack-dev-server": "^3.11.0"
-  }
+    "not dead"
+  ]
 }
