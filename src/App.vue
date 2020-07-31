@@ -14,21 +14,20 @@
 				/>
 			</a>
 			<nav class="en">
-				//TODO fix icons behaviour
 				<a href="#" rel="index" class="home-link">
-					<i class="fas fa-home icon-home"></i>
+					<i class="fas fa-home icon-home"></i><span>HOME</span>
 				</a>
 				<a href="#" rel="about" class="about-link">
-					<i class="fas fa-user-alt"></i>
+					<i class="fas fa-user-alt"></i><span>ABOUT</span>
 				</a>
 				<a href="#" rel="skills" class="skills-link">
-					<i class="fas fa-cog"></i>
+					<i class="fas fa-cog"></i><span>SKILLS</span>
 				</a>
 				<a href="#" rel="my-work" class="my-work-link">
-					<i class="far fa-eye"></i>
+					<i class="far fa-eye"></i><span>WORKS</span>
 				</a>
 				<a href="#" rel="contact" class="contact-link">
-					<i class="far fa-envelope"></i>
+					<i class="far fa-envelope"></i><span>CONTACT</span>
 				</a>
 			</nav>
 		</div>
@@ -41,9 +40,6 @@ body {
 	user-select: none;
 	font: 300 11px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #444;
-}
-div {
-	display: block;
 }
 #nav_bar {
 	background: #181818;
@@ -73,9 +69,6 @@ div {
 	position: relative;
 	text-decoration: none;
 }
-#nav_bar nav a i {
-	transition: all 0.3s ease-out;
-}
 
 .logo img {
 	display: block;
@@ -83,12 +76,33 @@ div {
 	width: 24px;
 	height: auto;
 }
-
-#nav_bar nav a:hover {
-	color: #fc0893;
+#nav_bar nav a i {
+	transition: opacity 0.3s ease-in;
+	opacity: 1;
+	height: auto;
 }
-a {
-	background-color: transparent;
-	text-decoration: none;
+
+#nav_bar nav a:hover i {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+#nav_bar nav a span {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+#nav_bar nav a:hover span {
+	transition: opacity 0.3s ease-in;
+	display: block;
+	color: #fc0893;
+	font-size: 9px;
+	letter-spacing: 2px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	height: auto;
 }
 </style>
