@@ -1,15 +1,18 @@
 <template>
 	<div>
 		<app-nav-bar></app-nav-bar>
+		<app-home></app-home>
 	</div>
 </template>
 
 <script>
 import AppNavBar from "./components/NavBar.vue";
+import AppHome from '@/views/Home.vue'
 
 export default {
 	components: {
 		AppNavBar,
+		AppHome,
 	},
 };
 </script>
