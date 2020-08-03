@@ -1,38 +1,18 @@
 <template>
-	<div id="app">
-		<div id="nav_bar">
-			<a class="logo">
-				<img
-					src="./assets/logo.png"
-					alt="F logo"
-					style="width:25px;height:30px;"
-				/>
-				<img
-					src="./assets/logo_sub.png"
-					alt="FDP | FrontEnd Developer"
-					style="width:30px;height:auto;"
-				/>
-			</a>
-			<nav class="en">
-				<a href="#" rel="index" class="home-link">
-					<i class="fas fa-home icon-home"></i><span>HOME</span>
-				</a>
-				<a href="#" rel="about" class="about-link">
-					<i class="fas fa-user-alt"></i><span>ABOUT</span>
-				</a>
-				<a href="#" rel="skills" class="skills-link">
-					<i class="fas fa-cog"></i><span>SKILLS</span>
-				</a>
-				<a href="#" rel="my-work" class="my-work-link">
-					<i class="far fa-eye"></i><span>WORKS</span>
-				</a>
-				<a href="#" rel="contact" class="contact-link">
-					<i class="far fa-envelope"></i><span>CONTACT</span>
-				</a>
-			</nav>
-		</div>
+	<div>
+		<app-nav-bar></app-nav-bar>
 	</div>
 </template>
+
+<script>
+import AppNavBar from "./components/NavBar.vue";
+
+export default {
+	components: {
+		AppNavBar,
+	},
+};
+</script>
 
 <style>
 body {
@@ -40,69 +20,5 @@ body {
 	user-select: none;
 	font: 300 11px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #444;
-}
-#nav_bar {
-	background: #181818;
-	width: 60px;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	z-index: 3;
-	min-height: 500px;
-}
-
-#nav_bar nav {
-	display: block;
-	text-align: center;
-}
-#nav_bar nav a {
-	font-size: 20px;
-	color: #909096;
-	margin-bottom: 15px;
-	display: block;
-	line-height: 51px;
-	height: 51px;
-	position: relative;
-	text-decoration: none;
-}
-
-.logo img {
-	display: block;
-	margin: 8px auto;
-	width: 24px;
-	height: auto;
-}
-#nav_bar nav a i {
-	transition: opacity 0.3s ease-in;
-	opacity: 1;
-	height: auto;
-}
-
-#nav_bar nav a:hover i {
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-}
-#nav_bar nav a span {
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-}
-#nav_bar nav a:hover span {
-	transition: opacity 0.3s ease-in;
-	display: block;
-	color: #fc0893;
-	font-size: 9px;
-	letter-spacing: 2px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	opacity: 1;
-	height: auto;
 }
 </style>
