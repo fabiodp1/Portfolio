@@ -1,9 +1,9 @@
 <template>
   <div id="nav_bar">
     <a class="logo">
-      <img src="../assets/logoBOnP.png" alt="F logo" style="width:20px;height:30px;" />
+      <img src="@/assets/logoBOnP.png" alt="F logo" style="width:20px;height:30px;" />
       <img
-        src="../assets/logo_sub.png"
+        src="@/assets/logo_sub.png"
         alt="FDP | FrontEnd Developer"
         style="width:30px;height:auto;"
       />

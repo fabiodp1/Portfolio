@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import AppNavBar from "./components/NavBar.vue";
+import AppNavBar from "./components/common/NavBar.vue";
 import AppHome from '@/views/Home.vue'
 
 export default {
